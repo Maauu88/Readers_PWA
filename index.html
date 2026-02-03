@@ -3,44 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <title>Readers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Css/styless.css" />
     <link rel="manifest" href="manifest.json" />
   </head>
   <body>
+    <script>
+      const user = localStorage.getItem("user");
+      if (!user) {
+        window.location.href = "login.html";
+      }
+    </script>
+
     <div class="app">
-      <!-- Sidebar -->
       <!-- Sidebar -->
       <aside class="sidebar">
         <h2>Readers</h2>
 
         <nav class="nav-menu">
           <a class="nav-item">
-            <img src="Images/icons/icons8-profile-60.png" alt="Perfil" />
+            <img src="images/icons/icons8-profile-60.png" />
             <span>Perfil</span>
           </a>
 
           <a class="nav-item">
-            <img src="Images/icons/icons8-to-do-60.png" alt="Biblioteca" />
+            <img src="images/icons/icons8-to-do-60.png" />
             <span>Biblioteca</span>
           </a>
 
           <a class="nav-item">
-            <img src="Images/icons/icons8-search-60.png" alt="Buscar" />
+            <img src="images/icons/icons8-search-60.png" />
             <span>Buscar</span>
           </a>
 
           <a class="nav-item">
-            <img src="Images/icons/icons8-create-document-60.png" alt="Crear" />
+            <img src="images/icons/icons8-create-document-60.png" />
             <span>Crear</span>
           </a>
 
           <a class="nav-item">
-            <img src="Images/icons/icons8-love-60.png" alt="Favoritos" />
+            <img src="images/icons/icons8-love-60.png" />
             <span>Favoritos</span>
           </a>
 
           <a class="nav-item">
-            <img src="Images/icons/icons8-dice-60.png" alt="Descubre" />
+            <img src="images/icons/icons8-dice-60.png" />
             <span>Descubre</span>
           </a>
         </nav>
@@ -48,25 +55,43 @@
 
       <!-- Contenido -->
       <main class="content">
-        <h1>GÉNERO</h1>
+        <h1>GÉNEROS</h1>
 
         <div class="genres">
-          <div class="genre" style="background-image: url(Images/terror.jpg)">
+          <div
+            class="genre"
+            style="background-image: url(&quot;images/terror.jpg&quot;)"
+          >
             Terror
           </div>
-          <div class="genre" style="background-image: url(Images/comic.jpg)">
+          <div
+            class="genre"
+            style="background-image: url(&quot;images/comic.jpg&quot;)"
+          >
             Cómics
           </div>
-          <div class="genre" style="background-image: url(Images/novela.jpg)">
+          <div
+            class="genre"
+            style="background-image: url(&quot;images/novela.jpg&quot;)"
+          >
             Novelas
           </div>
-          <div class="genre" style="background-image: url(Images/ciencia.jpg)">
+          <div
+            class="genre"
+            style="background-image: url(&quot;images/ciencia.jpg&quot;)"
+          >
             Ciencia
           </div>
-          <div class="genre" style="background-image: url(Images/manga.jpg)">
+          <div
+            class="genre"
+            style="background-image: url(&quot;images/manga.jpg&quot;)"
+          >
             Mangas
           </div>
-          <div class="genre" style="background-image: url(Images/amor.jpg)">
+          <div
+            class="genre"
+            style="background-image: url(&quot;images/amor.jpg&quot;)"
+          >
             Romance
           </div>
         </div>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Readers</title>
+    <link rel="stylesheet" href="Css/styless.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Readers</h2>
+
+        <nav class="nav-menu">
+          <a class="nav-item">
+            <img src="images/icons/icons8-profile-60.png" alt="Perfil" />
+            <span>Perfil</span>
+          </a>
+
+          <a class="nav-item">
+            <img src="images/icons/icons8-to-do-60.png" alt="Biblioteca" />
+            <span>Biblioteca</span>
+          </a>
+
+          <a class="nav-item">
+            <img src="images/icons/icons8-search-60.png" alt="Buscar" />
+            <span>Buscar</span>
+          </a>
+
+          <a class="nav-item">
+            <img src="images/icons/icons8-create-document-60.png" alt="Crear" />
+            <span>Crear</span>
+          </a>
+
+          <a class="nav-item">
+            <img src="images/icons/icons8-love-60.png" alt="Favoritos" />
+            <span>Favoritos</span>
+          </a>
+
+          <a class="nav-item">
+            <img src="images/icons/icons8-dice-60.png" alt="Descubre" />
+            <span>Descubre</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Contenido -->
+      <main class="content">
+        <h1>GÉNERO</h1>
+
+        <div class="genres">
+          <div class="genre" style="background-image: url(Images/terror.jpg)">
+            Terror
+          </div>
+          <div class="genre" style="background-image: url(Images/comic.jpg)">
+            Cómics
+          </div>
+          <div class="genre" style="background-image: url(Images/novela.jpg)">
+            Novelas
+          </div>
+          <div class="genre" style="background-image: url(Images/ciencia.jpg)">
+            Ciencia
+          </div>
+          <div class="genre" style="background-image: url(Images/manga.jpg)">
+            Mangas
+          </div>
+          <div class="genre" style="background-image: url(Images/amor.jpg)">
+            Romance
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+  </body>
+</html>

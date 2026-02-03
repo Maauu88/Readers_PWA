@@ -1,0 +1,21 @@
+{
+  "name": "Readers",
+  "short_name": "Readers",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#F6EFEA",
+  "theme_color": "#C97B63",
+  "description": "Una app tipo Spotify para lectores",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
